@@ -130,7 +130,6 @@
   --warning-orange: #F97316;
   --well-maintained-green: #10B981;
   --critical-red: #EF4444;
-  --kofi-red: #FF5E5B;
 
   /* Timeline Colors */
   --timeline-green: #10B981;
@@ -1242,20 +1241,11 @@ body::before {
   margin-bottom: var(--spacing-md);
 }
 
-.touch-up-timeline__kofi {
-  display: inline-block;
-  transition: var(--transition);
-}
 
-.touch-up-timeline__kofi:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
 
-.touch-up-timeline__kofi-img {
-  height: 45px;
-  transition: var(--transition);
-}
+
+
+
 
 .touch-up-timeline__footer-info {
   margin-top: var(--spacing-lg);
