@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const submitBtn = feedbackForm.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
             submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="btn-icon">⏳</span><span class="btn-text">Sending...</span>';
+            submitBtn.innerHTML = '<span class="btn-icon"><svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-clock></use></svg></span><span class="btn-text">Sending...</span>';
 
             try {
                 // Using Web3Forms (Free Email Service)
