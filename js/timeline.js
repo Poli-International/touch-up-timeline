@@ -208,7 +208,7 @@ function displayRecommendations(recommendations) {
     li.style.color = 'var(--text-primary)';
 
     const icon = document.createElement('span');
-    icon.textContent = rec.priority === 'high' ? '🔴' : '💡';
+    icon.innerHTML = rec.priority === 'high' ? '<svg class=ti-i width=.7em height=.7em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-dot-red></use></svg>' : '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-bulb></use></svg>';
     icon.style.position = 'absolute';
     icon.style.left = 'var(--spacing-sm)';
 
@@ -398,7 +398,7 @@ function handleCostCalculation(e) {
   // Comparison cards
   document.getElementById('goodCareCost').textContent = TattooCalculators.formatCurrency(results.goodCareCost);
   document.getElementById('goodCareTouchUps').textContent = `${results.goodCareTouchUps} touch-ups over 30 years`;
-  document.getElementById('savings').textContent = `💰 Save ${TattooCalculators.formatCurrency(results.savings)}!`;
+  document.getElementById('savings').textContent = `Save ${TattooCalculators.formatCurrency(results.savings)}!`;
 
   document.getElementById('poorCareCost').textContent = TattooCalculators.formatCurrency(results.poorCareCost);
   document.getElementById('poorCareTouchUps').textContent = `${results.poorCareTouchUps} touch-ups over 30 years`;
