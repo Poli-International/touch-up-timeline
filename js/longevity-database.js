@@ -190,28 +190,28 @@ const TattooLongevityData = {
     'no_rush': {
       threshold: 5, // Years remaining
       level: 'Looking Great!',
-      icon: '✅',
+      icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-check></use></svg>',
       color: '#10B981',
       message: 'Your tattoo is still in excellent condition. Keep up the great care routine!'
     },
     'plan_ahead': {
       threshold: 3,
       level: 'Plan Ahead',
-      icon: '📅',
+      icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-calendar></use></svg>',
       color: '#F59E0B',
       message: 'Start planning for a touch-up in the next few years. Schedule a consultation with your artist.'
     },
     'schedule_soon': {
       threshold: 1,
       level: 'Schedule Soon',
-      icon: '⏰',
+      icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-clock></use></svg>',
       color: '#F97316',
       message: 'Touch-up recommended within the next year to maintain vibrancy and detail.'
     },
     'overdue': {
       threshold: 0,
       level: 'Overdue',
-      icon: '🚨',
+      icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-siren></use></svg>',
       color: '#EF4444',
       message: 'Your tattoo is overdue for a touch-up. Significant fading may have occurred.'
     }
