@@ -190,13 +190,13 @@ const TattooCalculators = {
 
     let recommendation = '';
     if (fadingAcceleration > 50) {
-      recommendation = '🚨 Critical: Your tattoo is fading MUCH faster than normal. You need SPF 50+ protection immediately!';
+      recommendation = 'Critical: Your tattoo is fading MUCH faster than normal. You need SPF 50+ protection immediately!';
     } else if (fadingAcceleration > 30) {
-      recommendation = '⚠️ Warning: Significant fading acceleration detected. Start using SPF 50+ every day.';
+      recommendation = 'Warning: Significant fading acceleration detected. Start using SPF 50+ every day.';
     } else if (fadingAcceleration > 15) {
-      recommendation = '📊 Moderate: Some fading acceleration. Consider using SPF more consistently.';
+      recommendation = 'Moderate: Some fading acceleration. Consider using SPF more consistently.';
     } else {
-      recommendation = '✅ Good: Your sun protection routine is helping preserve your tattoo!';
+      recommendation = 'Good: Your sun protection routine is helping preserve your tattoo!';
     }
 
     return {
@@ -292,7 +292,7 @@ const TattooCalculators = {
       status = {
         level: 'Needs Touch-Up Now',
         color: '#EF4444',
-        icon: '🚨',
+        icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-siren></use></svg>',
         message: 'Your tattoo is showing significant wear and should be touched up soon to prevent further deterioration.',
         action: 'Book a consultation with your tattoo artist within the next 2-4 weeks.'
       };
@@ -300,7 +300,7 @@ const TattooCalculators = {
       status = {
         level: 'Touch-Up Recommended',
         color: '#F97316',
-        icon: '⏰',
+        icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-clock></use></svg>',
         message: 'Your tattoo is showing moderate wear. A touch-up in the next 3-6 months will restore its vibrancy.',
         action: 'Start planning your touch-up. Reach out to artists and discuss timing and cost.'
       };
@@ -308,7 +308,7 @@ const TattooCalculators = {
       status = {
         level: 'Monitor Closely',
         color: '#F59E0B',
-        icon: '👀',
+        icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-eye></use></svg>',
         message: 'Your tattoo is starting to show some wear. Keep an eye on it over the next 6-12 months.',
         action: 'Take photos now for comparison. Continue your care routine and reassess in 6 months.'
       };
@@ -316,7 +316,7 @@ const TattooCalculators = {
       status = {
         level: 'Still Looking Great!',
         color: '#10B981',
-        icon: '✅',
+        icon: '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-check></use></svg>',
         message: 'Your tattoo is in excellent condition. No immediate touch-up needed.',
         action: 'Keep up your current care routine! Reassess annually and compare to current photos.'
       };
