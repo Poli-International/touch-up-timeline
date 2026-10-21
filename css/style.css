@@ -916,7 +916,7 @@ body::before {
 }
 
 .touch-up-timeline__maintenance-list li::before {
-  content: '✓';
+  content: '';
   position: absolute;
   left: 0;
   color: var(--well-maintained-green);
@@ -1200,7 +1200,7 @@ body::before {
 }
 
 .touch-up-timeline__attention-list li::before {
-  content: '⚠️';
+  content: '';
   position: absolute;
   left: var(--spacing-sm);
 }
