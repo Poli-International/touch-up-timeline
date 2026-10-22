@@ -284,13 +284,13 @@
       // Copy to clipboard
       navigator.clipboard.writeText(textToCopy).then(() => {
         // Visual feedback
-        const originalText = button.textContent;
+        const originalText = button.innerHTML;
         button.textContent = 'Copied!';
         button.style.backgroundColor = '#00CC66';
 
         // Reset after 2 seconds
         setTimeout(() => {
-          button.textContent = originalText;
+          button.innerHTML = originalText;
           button.style.backgroundColor = '#B76E79';
         }, 2000);
       }).catch(err => {
